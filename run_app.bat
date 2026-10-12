@@ -1,12 +1,12 @@
 @echo off
-title Menjalankan Aplikasi Dokumentasi Kegiatan
-echo ========================================================
-echo   MENJALANKAN APLIKASI DOKUMENTASI KEGIATAN WORD SIAP CETAK
-echo ========================================================
+title Aplikasi Dokumentasi Foto (Siap Cetak)
+echo ===================================================================
+echo   APLIKASI DOKUMENTASI FOTO (REDESAIN & PENYEMPURNAAN VERSI 2.0)
+echo ===================================================================
 echo.
-echo Memeriksa pustaka Python...
+echo [1/2] Memeriksa pustaka Python yang dibutuhkan...
 pip install -r requirements.txt
 echo.
-echo Membuka aplikasi di browser...
+echo [2/2] Menjalankan server aplikasi web...
 streamlit run app.py
 pause

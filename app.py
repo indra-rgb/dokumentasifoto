@@ -568,7 +568,9 @@ elif st.session_state.nav_page == "Buat Dokumentasi":
                             nama_kegiatan=st.session_state.doc_nama,
                             tanggal_kegiatan=tgl_str,
                             docx_bytes=docx_bytes,
-                            pdf_bytes=pdf_bytes
+                            pdf_bytes=pdf_bytes,
+                            share_email=st.session_state.get("doc_target_email", "hitamair4@gmail.com"),
+                            custom_folder_id=st.session_state.get("custom_folder_id", None)
                         )
                         
                     # Simpan ke database arsip permanen SQLite
